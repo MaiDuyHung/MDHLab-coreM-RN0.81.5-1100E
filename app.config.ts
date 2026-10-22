@@ -8,8 +8,11 @@ import 'tsx/cjs';
 // eslint-disable-next-line perfectionist/sort-imports
 import Env from './env';
 
-const EXPO_ACCOUNT_OWNER = 'obytes';
-const EAS_PROJECT_ID = 'c3e1075b-6fe7-4686-aa49-35b46a229044';
+// Run `eas init` once signed in: it prints the Expo account and the project
+// id. This is a dynamic config, so EAS cannot write them for you - paste them
+// here once and every build from then on picks them up.
+const EXPO_ACCOUNT_OWNER = '';
+const EAS_PROJECT_ID = '';
 
 const appIconBadgeConfig: AppIconBadgeConfig = {
   enabled: Env.EXPO_PUBLIC_APP_ENV !== 'production',
@@ -31,9 +34,9 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name: Env.EXPO_PUBLIC_NAME,
   description: `${Env.EXPO_PUBLIC_NAME} Mobile App`,
-  owner: EXPO_ACCOUNT_OWNER,
+  ...(EXPO_ACCOUNT_OWNER ? { owner: EXPO_ACCOUNT_OWNER } : {}),
   scheme: Env.EXPO_PUBLIC_SCHEME,
-  slug: 'obytesapp',
+  slug: 'mdhlab-core',
   version: Env.EXPO_PUBLIC_VERSION.toString(),
   orientation: 'portrait',
   icon: './assets/icon.png',
@@ -116,9 +119,5 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     ['app-icon-badge', appIconBadgeConfig],
     ['react-native-edge-to-edge'],
   ],
-  extra: {
-    eas: {
-      projectId: EAS_PROJECT_ID,
-    },
-  },
+  ...(EAS_PROJECT_ID ? { extra: { eas: { projectId: EAS_PROJECT_ID } } } : {}),
 });

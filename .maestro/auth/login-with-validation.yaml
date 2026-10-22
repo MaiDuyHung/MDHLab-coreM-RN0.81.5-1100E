@@ -7,7 +7,7 @@ env:
 - launchApp
 - runFlow:
     when:
-      visible: Obytes Starter
+      visible: MDHLab Core
     file: ../utils/onboarding.yaml
 - assertVisible: Sign In
 - assertVisible:

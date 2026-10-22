@@ -10,7 +10,7 @@
     "title": "Cart"
   },
   "onboarding": {
-    "message": "Welcome to obytes app site"
+    "message": "Welcome to MDHLab Core"
   },
   "settings": {
     "about": "About",
@@ -50,5 +50,5 @@
     "specification": "Specification",
     "title": "Shop"
   },
-  "welcome": "Welcome to obytes app site"
+  "welcome": "Welcome to MDHLab Core"
 }

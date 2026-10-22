@@ -4,7 +4,7 @@ tags:
 ---
 - runFlow:
     when:
-      visible: Obytes Starter
+      visible: MDHLab Core
     file: onboarding.yaml
 - runFlow:
     when:
