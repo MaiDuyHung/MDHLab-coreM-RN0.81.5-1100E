@@ -1,4 +1,14 @@
 {
+  "cart": {
+    "checkout": "Checkout",
+    "clear": "Clear cart",
+    "discount": "Discount",
+    "empty": "Your cart is empty",
+    "payable": "Total",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "title": "Cart"
+  },
   "onboarding": {
     "message": "Welcome to obytes app site"
   },
@@ -28,6 +38,17 @@
     "title": "Settings",
     "version": "Version",
     "website": "Website"
+  },
+  "shop": {
+    "add_to_cart": "Add to cart",
+    "added_to_cart": "Added to cart",
+    "description": "Description",
+    "in_stock": "In stock",
+    "load_error": "Could not load products",
+    "out_of_stock": "Out of stock",
+    "related_tags": "Tags",
+    "specification": "Specification",
+    "title": "Shop"
   },
   "welcome": "Welcome to obytes app site"
 }

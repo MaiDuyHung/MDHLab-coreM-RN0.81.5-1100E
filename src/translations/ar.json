@@ -1,4 +1,14 @@
 {
+  "cart": {
+    "checkout": "إتمام الشراء",
+    "clear": "إفراغ السلة",
+    "discount": "الخصم",
+    "empty": "سلتك فارغة",
+    "payable": "الإجمالي",
+    "remove": "إزالة",
+    "subtotal": "المجموع الفرعي",
+    "title": "السلة"
+  },
   "onboarding": {
     "message": "مرحبا بكم في موقع تطبيق obytes"
   },
@@ -28,6 +38,17 @@
     "title": "إعدادات",
     "version": "إصدار",
     "website": "موقع الكتروني"
+  },
+  "shop": {
+    "add_to_cart": "أضف إلى السلة",
+    "added_to_cart": "تمت الإضافة إلى السلة",
+    "description": "الوصف",
+    "in_stock": "متوفر",
+    "load_error": "تعذر تحميل المنتجات",
+    "out_of_stock": "غير متوفر",
+    "related_tags": "الوسوم",
+    "specification": "المواصفات",
+    "title": "المتجر"
   },
   "welcome": "test arabic"
 }
